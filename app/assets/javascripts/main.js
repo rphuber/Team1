@@ -1,8 +1,11 @@
+angular.module("project", ["project.controllers", "ngRoute"])
+	.config(function($routeProvider){
+		$routeProvider
+		.when ("/",
+		{
+			templateUrl: "../assets/home.html",
+			controller: "WelcomeCtrl"
+		})
+	});
 
-@team1.config(['$routeProvider', ($routeProvider) ->
-  $routeProvider.
-    otherwise({
-      templateUrl: '../views/welcome/index.html.erb',
-      controller: 'WelcomeCtrl'
-    }) 
-])
+	angular.module("angularBlog.controllers", []);
