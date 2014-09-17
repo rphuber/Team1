@@ -9,5 +9,7 @@
     - if notice || alert
       %p.notice= notice
       %p.alert= alert
+    / - if current_user.try(:admin?)
+    / - if current_user.admin?
     %h1.test Hey
     = yield
