@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= form_for @tiyer, remote: true do |f| %>
+          <%= f.label :first_name, class: 'control-label' %>
+          <%= f.text_field :first_name, class: 'form-control' %>
+          <br/>
+          <%= f.label :last_name, class: 'control-label' %>
+          <%= f.text_field :last_name, class: 'form-control' %>
+          <br/>
+          <%= f.label :github, class: 'control-label' %>
+          <%= f.text_field :github, class: 'form-control' %>
+          <br/>
+          <%= f.label :tiy_type, class: 'control-label' %>
+          <%= f.text_field :tiy_type, class: 'form-control' %>
+          <br/>
+          <%= f.submit %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
