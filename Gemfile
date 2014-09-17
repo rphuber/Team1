@@ -29,12 +29,6 @@ gem 'spring',        group: :development
 gem 'haml-rails'
 gem 'devise'
 
-group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0'
-  gem 'capybara'
-  gem 'selenium-webdriver'
-  gem 'database_cleaner'
-end
 group :test do
   gem 'shoulda-matchers', require: false
 end
