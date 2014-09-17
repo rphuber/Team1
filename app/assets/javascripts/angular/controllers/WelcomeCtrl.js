@@ -1,4 +1,4 @@
 angular.module("project.controllers", []).
 controller("WelcomeCtrl", function ($scope){
-	$scope.hello = 'Hello'
+	$scope.hello = 'Hello Charles'
 });
