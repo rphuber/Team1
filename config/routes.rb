@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'static_pages/index'
-
   devise_for :users
   resources :users, only: [:index, :show]
   
