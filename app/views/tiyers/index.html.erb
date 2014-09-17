@@ -1,0 +1,16 @@
+<div>
+  <%= @tiyers.each do |tiyer| %>
+    <div>
+      <%= tiyer.first_name %>
+      <br/>
+      <%= tiyer.last_name %>
+      <br/>
+      <%= tiyer.github %>
+      <br/>
+      <%= tiyer.type %>
+    </div>
+  <% end %>
+</div>
+<div>
+  <%= link_to "Back", root_path %>
+</div>
