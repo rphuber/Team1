@@ -1,6 +1,6 @@
 
-<div class="container">
-	<aside class="leftSide">
+<div class="row container">
+	<!-- <aside class="leftSide">
 		<div class="TIY">
 				<img src="" alt="IRON YARD LOGO" />
 				<p>Established:</p>
@@ -13,13 +13,14 @@
 			<p>FILTER ONE</p>
 			<p>FILTER ONE</p>
 		</div>
-	</aside>
+	</aside> -->
 
-<div class="tiyerList">
+<div class="large-12 columns tiyersList">
 	<div  ng-repeat="tiyer in tiyers">
-		<div>
+		<div class="large-4 columns panel tiyerCard">
 			<h2>{{tiyer.first_name}} {{tiyer.last_name}}</h2>
-			<p><a href="{{tiyer.github}}">GitHub</a></p>
+			<img src="http://lorempixel.com/g/125/125/people" alt="" />
+			<p><a href="http://github.com/{{tiyer.github}}">GitHub</a></p>
 			<p>{{tiyer.tiy_type}}</p>
 		</div>
 	</div

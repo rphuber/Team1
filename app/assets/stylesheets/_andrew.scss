@@ -1,19 +1,12 @@
 .container{
- text-align:center;
- display:block;
 
-  .leftSide{
-   width:30%;
-   display:inline-block;
+ .tiyerCard:hover{
+   background:#2E2D2C;
+   h2{
+   color:#D2CEC9;
   }
-
-  .tiyerList{
-   display:inline-block;
-   float:right;
-   width:68%;
-    div{
-     display:inline-block;
-     width:33%;
-    }
-  }
+   p{
+    color:#D2CEC9;
+   }
+ }
 }
