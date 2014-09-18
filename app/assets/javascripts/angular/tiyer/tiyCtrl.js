@@ -1,5 +1,5 @@
 angular.module("tiyApp")
-  .controller('tiyCtrl', function ($route, $rootScope, $scope, tiySvc) {
+  .controller('tiyCtrl', function ($route, $rootScope, $scope, $location, tiySvc) {
     
     $scope.submitTiyer = function(person) {
 
@@ -13,7 +13,8 @@ angular.module("tiyApp")
 
       tiySvc.submitTiyer(person);
 
-      $scope.submitTiyer = {};
+
+      $location.path('/');
 
     };
 
