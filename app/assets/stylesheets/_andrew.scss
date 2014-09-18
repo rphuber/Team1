@@ -1,0 +1,19 @@
+.container{
+ text-align:center;
+ display:block;
+
+  .leftSide{
+   width:30%;
+   display:inline-block;
+  }
+
+  .tiyerList{
+   display:inline-block;
+   float:right;
+   width:68%;
+    div{
+     display:inline-block;
+     width:33%;
+    }
+  }
+}
