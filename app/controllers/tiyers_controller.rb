@@ -44,7 +44,7 @@ class TiyersController < ApplicationController
 private
 
   def tiyer_params
-    params.require(:tiyer).permit(:first_name, :last_name, :github, :tiy_type, :image)
+    params.require(:tiyer).permit(:first_name, :last_name, :github, :tiy_type, :image, :github_url, :bio, :inspiration)
   end
 
 end
