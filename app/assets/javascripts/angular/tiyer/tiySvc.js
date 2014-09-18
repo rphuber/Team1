@@ -1,9 +1,9 @@
 angular.module("tiyApp")
   .factory('tiySvc', function ($route, $rootScope, $log, $http) {
-      var tiyers = "/tiyer.json";
+      var tiyers = "/tiyers";
 
       var getTiyers = function(){
-        return $http.get(tiyersUrl);
+        return $http.get(tiyers);
       };
 
       var submitTiyer = function(tiyer) {
