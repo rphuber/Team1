@@ -1,0 +1,25 @@
+<div class="singleProfile">
+ <a href="#/"><span class="glyphicon glyphicon-remove"></span></a>
+  <aside class="leftside">
+   <img src="" alt="" />
+   <h3>{{first_name}} {{last_name}}</h3>
+   <p>{{tiy_type}}</p>
+   <button type="button" class="btn btn-success"><a href="#{{github}}">GitHub Profile</a></button>
+  </aside>
+ <section>
+  ABOUT ME GOES HERE
+ </section>
+</div>
+
+
+//SERVICE FUNCTIONS//
+
+var findProductByIdx = function (idx) {
+      return $http.get(ARRAY VARIABLE NAME + "/" + id);
+     };
+
+//CONTROLLER FUNCTIONS//
+
+httpService.findProductByIdx($routeParams.id).then(function(response){
+      $scope.singleCard = response.data;
+     });

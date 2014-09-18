@@ -3,7 +3,7 @@ angular.module("tiyApp")
       var tiyers = "/tiyer.json";
 
       var getTiyers = function(){
-        return $http.get(tiyersUrl);
+        return $http.get(tiyers);
       };
 
       var submitTiyer = function(tiyer) {
@@ -18,6 +18,6 @@ angular.module("tiyApp")
         getTiyers : getTiyers,
         submitTiyer : submitTiyer
 
-       
+
       }
   });
