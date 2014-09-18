@@ -5297,3 +5297,17 @@ h1 {
 
 p {
   color: orange; }
+
+.container {
+  text-align: center;
+  display: block; }
+  .container .leftSide {
+    width: 30%;
+    display: inline-block; }
+  .container .tiyerList {
+    display: inline-block;
+    float: right;
+    width: 68%; }
+    .container .tiyerList div {
+      display: inline-block;
+      width: 33%; }
