@@ -1,9 +1,6 @@
 angular.module("tiyApp")
-  .controller('tiyCtrl', function ($route, $rootScope, $location, $routeParams, $scope, tiySvc) {
 
-    // tiySvc.findProductByIdx($routeParams.id).then(function(response){
-    //       $scope.singleCard = response.data;
-    //      });
+  .controller('tiyCtrl', function ($route, $rootScope, $location, $routeParams, $scope, tiySvc) {
 
     $scope.submitTiyer = function(person) {
 
@@ -18,7 +15,8 @@ angular.module("tiyApp")
 
       tiySvc.submitTiyer(person);
 
-      $scope.submitTiyer = {};
+
+      $location.path('/');
 
       $location.path("/")
     };
