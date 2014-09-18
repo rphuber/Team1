@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html ng-app="project">
+<html>
   <head>
     <title>GroupProject</title>
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -18,7 +18,7 @@
     <!-- - if current_user.try(:admin?)-->
     <!-- - if current_user.admin?-->
     
-    <div ng-view>
+    <div>
       <%= yield %>
     </div>
   </body>

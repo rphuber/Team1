@@ -1,4 +1,7 @@
 class RegistrationsController < Devise::RegistrationsController
+  respond_to do |format|
+    format.json { render json: @posts.as_json }
+  end
   # POST /resource
   def create
     @new_user = build_resource(sign_up_params)
