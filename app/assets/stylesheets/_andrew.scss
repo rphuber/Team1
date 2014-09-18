@@ -1,7 +1,39 @@
+body{
+ background:#89898C;
+}
+
 .container{
 
+ .leftSide{
+  text-align:center;
+
+  .button{
+   background:#008CBA;
+  }
+
+  .filters{
+   p{
+   display:inline-block;
+  }
+  }
+ }
+
+ .tiyerCard{
+  text-align:center;
+  img{
+   width:100px;
+   height:100px;
+  }
+  p{
+   margin-top:10px
+  }
+  a{
+   color:#008CBA;
+  }
+ }
  .tiyerCard:hover{
    background:#2E2D2C;
+   cursor:pointer;
    h2{
    color:#D2CEC9;
   }

@@ -1,27 +1,32 @@
 
 <div class="row container">
-	<!-- <aside class="leftSide">
-		<div class="TIY">
-				<img src="" alt="IRON YARD LOGO" />
-				<p>Established:</p>
-				<p>INFORMATION ABOUT TIY</p>
+	<div class="large-12 large-centered columns">
+		<div class="large-12 large-centered columns">
+			<aside class="leftSide">
+				<div class="TIY">
+						<img src="http://theironyard.com/images/iron-yard-logo.svg" alt="IRON YARD LOGO" />
+						<h2>Established: A long time ago in a galaxy far,far away....</h2>
+						<h3>The Iron Yard exists to create exceptional value for people and their ideas through code education, startup accelerators and coworking spaces.</h3>
+				</div>
+					<a href="#/create" class="button">Create Profile Card</a>
+				<div class="filters">
+					<p>FILTER ONE |</p>
+					<p>FILTER TWO |</p>
+					<p>FILTER THREE</p>
+				</div>
+			</aside>
 		</div>
-
-		<div class="filters">
-			<a href="#/create">create</a>
-			<p>FILTER ONE</p>
-			<p>FILTER ONE</p>
-			<p>FILTER ONE</p>
-		</div>
-	</aside> -->
+	</div>
 
 <div class="large-12 columns tiyersList">
 	<div  ng-repeat="tiyer in tiyers">
-		<div class="large-4 columns panel tiyerCard">
-			<h2>{{tiyer.first_name}} {{tiyer.last_name}}</h2>
-			<img src="http://lorempixel.com/g/125/125/people" alt="" />
-			<p><a href="http://github.com/{{tiyer.github}}">GitHub</a></p>
-			<p>{{tiyer.tiy_type}}</p>
+		<div class="large-4 columns">
+			<div class="panel tiyerCard">
+				<h2>{{tiyer.first_name}} {{tiyer.last_name}}</h2>
+				<img src="https://s3.amazonaws.com/uploads.hipchat.com/31349/591869/kpfZck2tc3x8dyQ/nickguin.jpg" alt="" />
+				<p><a href="http://github.com/{{tiyer.github}}">GitHub Profile</a></p>
+				<p>{{tiyer.tiy_type}}</p>
+			</div>
 		</div>
 	</div
 </div>

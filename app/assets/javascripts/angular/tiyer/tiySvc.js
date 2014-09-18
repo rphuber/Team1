@@ -14,7 +14,7 @@ angular.module("tiyApp")
 
     };
 
-    
+      
 
       return{
         getTiyers : getTiyers,
