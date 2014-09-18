@@ -5,8 +5,8 @@ angular.module("tiyApp")
 
        var tiyerData = {
 
-        firstName:$scope.firstName,
-        lastName:$scope.lastName,
+        first_name:$scope.first_name,
+        last_name:$scope.last_name,
         github:$scope.github,
         tiy_type:$scope.tiy_type
       };
@@ -16,5 +16,12 @@ angular.module("tiyApp")
       $scope.submitTiyer = {};
 
     };
+
+
+    tiySvc.getTiyers().success(function(data) {
+
+    	$scope.tiyers = data;
+
+    });
 
   });

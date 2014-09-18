@@ -8,8 +8,11 @@ angular.module("tiyApp", [
           templateUrl: "../assets/home.html",
           controller: "tiyCtrl"
         })
-    });
+    })
 
+.config(["$httpProvider", function(provider) {
+    provider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content')
+}]);
 
 angular.module("tiyCtrl", []);
 angular.module("tiySvc", []);
