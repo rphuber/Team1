@@ -13,6 +13,7 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-github'
+gem "paperclip", "~> 4.2"
 group :test do
   gem 'shoulda-matchers', require: false
 end

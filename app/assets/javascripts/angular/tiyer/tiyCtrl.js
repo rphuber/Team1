@@ -1,9 +1,11 @@
 angular.module("tiyApp")
-  .controller('tiyCtrl', function ($route, $rootScope, $scope, $location, tiySvc) {
-    
+
+  .controller('tiyCtrl', function ($route, $rootScope, $location, $routeParams, $scope, tiySvc) {
+
     $scope.submitTiyer = function(person) {
 
        var tiyerData = {
+
 
         first_name:$scope.first_name,
         last_name:$scope.last_name,
@@ -16,12 +18,12 @@ angular.module("tiyApp")
 
       $location.path('/');
 
+      $location.path("/")
     };
-
 
     tiySvc.getTiyers().success(function(data) {
 
-    	$scope.tiyers = data;
+     $scope.tiyers = data;
 
     });
 
