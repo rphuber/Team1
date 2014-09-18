@@ -1,7 +1,12 @@
 <h2>Welcome</h2>
 
+<div ng-repeat="tiyer in tiyers">
+	<h2>{{tiyer.first_name}}</h2>
+</div>
+
 <form ng-submit="submitTiyer(person)">
 		<div>
+			
 	    	<div>
 	    		<input type="text" placeholder="First Name" ng-model="person.first_name">
 	    		<input type="text" placeholder="Last Name" ng-model="person.last_name">

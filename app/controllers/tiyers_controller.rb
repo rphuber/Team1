@@ -1,6 +1,10 @@
 class TiyersController < ApplicationController
   def index
     @tiyers= Tiyer.all
+
+    respond_to do |format|
+      format.json { render json: @tiyers.as_json }
+    end
   end
 
   def new
