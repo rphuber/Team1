@@ -1,21 +1,26 @@
-<h2>Welcome</h2>
 
-<div ng-repeat="tiyer in tiyers">
-	<h2>{{tiyer.first_name}}</h2>
-</div>
-
-<form ng-submit="submitTiyer(person)">
-		<div>
-			
-	    	<div>
-	    		<input type="text" placeholder="First Name" ng-model="person.first_name">
-	    		<input type="text" placeholder="Last Name" ng-model="person.last_name">
-	    		<input type="text" placeholder="Github Username" ng-model="person.github">
-	    		<input type="text" placeholder="Type" ng-model="person.tiy_type">
-
-
-	    		<button class="btn btn-default" type="submit">Send</button>
-
-	    	</div>
+<div class="container">
+	<aside class="leftSide">
+		<div class="TIY">
+				<img src="" alt="IRON YARD LOGO" />
+				<p>Established:</p>
+				<p>INFORMATION ABOUT TIY</p>
 		</div>
-	</form>
+
+		<div class="filters">
+			<a href="#/create">create</a>
+			<p>FILTER ONE</p>
+			<p>FILTER ONE</p>
+			<p>FILTER ONE</p>
+		</div>
+	</aside>
+
+<div class="tiyerList">
+	<div  ng-repeat="tiyer in tiyers">
+		<div>
+			<h2>{{tiyer.first_name}} {{tiyer.last_name}}</h2>
+			<p><a href="{{tiyer.github}}">GitHub</a></p>
+			<p>{{tiyer.tiy_type}}</p>
+		</div>
+	</div
+</div>

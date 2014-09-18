@@ -14,10 +14,14 @@ angular.module("tiyApp")
 
     };
 
+    // var findProductByIdx = function (id) {
+    //       return $http.get(tiyers + "/" + id);
+    //      };
+
       return{
         getTiyers : getTiyers,
-        submitTiyer : submitTiyer
-
+        submitTiyer : submitTiyer,
+        // findProductByIdx : findProductByIdx
 
       }
   });

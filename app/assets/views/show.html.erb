@@ -10,16 +10,3 @@
   ABOUT ME GOES HERE
  </section>
 </div>
-
-
-//SERVICE FUNCTIONS//
-
-var findProductByIdx = function (idx) {
-      return $http.get(ARRAY VARIABLE NAME + "/" + id);
-     };
-
-//CONTROLLER FUNCTIONS//
-
-httpService.findProductByIdx($routeParams.id).then(function(response){
-      $scope.singleCard = response.data;
-     });

@@ -8,6 +8,14 @@ angular.module("tiyApp", [
           templateUrl: "../assets/home.html",
           controller: "tiyCtrl"
         })
+        .when("/create",{
+          templateUrl: "../assets/create.html",
+          controller: "tiyCtrl"
+        })
+        .when("/show", {
+          templateUrl: "../assets/show.html",
+          controller: "tiyCtrl"
+        })
     })
 
 .config(["$httpProvider", function(provider) {
