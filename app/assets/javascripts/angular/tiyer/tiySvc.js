@@ -14,11 +14,16 @@ angular.module("tiyApp")
 
     };
 
+    var getTiyer = function(id) {
+        return $http.get(tiyers + "/" + id);
+      };
+
       
 
       return{
         getTiyers : getTiyers,
         submitTiyer : submitTiyer,
+        getTiyer : getTiyer
 
 
       }
