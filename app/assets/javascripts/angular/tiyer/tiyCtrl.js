@@ -4,7 +4,7 @@ angular.module("tiyApp")
 
     $scope.submitTiyer = function(person) {
 
-       var tiyerData = {
+      var tiyerData = {
 
 
         first_name:$scope.first_name,
@@ -17,16 +17,17 @@ angular.module("tiyApp")
 
 
       $location.path('/');
-
-      $location.path("/")
     };
 
-    tiySvc.getTiyers().success(function(data) {
+    tiySvc.getTiyers().success(function(tiyers) {
 
-     $scope.tiyers = data;
+     $scope.tiyers = tiyers;
 
     });
 
+    tiySvc.getTiyer($routeParams.id).success(function(tiyer){
+      $scope.tiyer = tiyer;
+    });
    
 
   });

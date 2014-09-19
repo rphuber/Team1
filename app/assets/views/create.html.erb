@@ -1,16 +1,35 @@
-<form ng-submit="submitTiyer(person)">
-	<div class="comtainer-fluid">
-    	<div class="row">
-    		<div class="col-sm-10 col-sm-centered columns">
-    			<div class="form-group">
-    				<label for="name">Name</label>
-    				<input type="text" class="form-control" placeholder="First Name" ng-model="person.first_name">
-    				<input type="text" class="form-control" placeholder="Last Name" ng-model="person.last_name">
-    			</div>
-    		</div>
-    		<input type="text" placeholder="Github Username" ng-model="person.github">
-    		<input type="text" placeholder="Type" ng-model="person.tiy_type">
-    		<button class="btn btn-default" type="submit">Send</button>
-    	</div>
-	</div>
-</form>
+<div class="row">
+   <div class="small-12 columns">
+        <div class="medium-6 columns">
+            <form ng-submit="submitTiyer(person)">
+                <div class="row">
+                    <fieldset class="medium-12 columns">
+                        <legend for="name">Full Name</legend>
+                        <div class="small-6 columns">
+                            <input type="text" placeholder="First" ng-model="person.first_name" />
+                        </div>
+                        <div class="small-6 columns">
+                            <input type="text" placeholder="Last" ng-model="person.last_name" />
+                        </div>
+                    </fieldset>
+                    <fieldset class="small-12 columns">
+                        <legend>Github</legend>                     
+                        <input type="text" placeholder="Github Username" ng-model="person.github">
+                        <input type="text" placeholder="Github Url" ng-model="person.github_url"> 
+                    </fieldset>
+                    <fieldset class="small-12 columns">
+                        <legend>Info</legend>
+                        <select name="tiy_type" ng-model="person.tiy_type">
+                            <option value="Student">Student</option>
+                            <option value="Alumni">Alumni</option>
+                            <option value="Staff">Staff</option>
+                        </select>                     
+                        <textarea placeholder="Bio" rows="4" ng-model="person.bio"></textarea>
+                        <input type="text" placeholder="Favorite language" ng-model="person.fav_lang"> 
+                    </fieldset>
+                    <button class="button right" type="submit">Submit</button>
+                </div>
+            </form>
+       </div>
+   </div>
+</div>
