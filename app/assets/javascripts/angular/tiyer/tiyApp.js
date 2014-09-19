@@ -12,7 +12,7 @@ angular.module("tiyApp", [
           templateUrl: "../assets/create.html",
           controller: "tiyCtrl"
         })
-        .when("/show", {
+        .when("/show/:id", {
           templateUrl: "../assets/show.html",
           controller: "tiyCtrl"
         })
